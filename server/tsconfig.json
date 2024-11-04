@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2017", "esnext.asynciterable"],
+    "types": ["node"],
+    // "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    // "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
