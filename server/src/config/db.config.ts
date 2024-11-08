@@ -6,9 +6,9 @@ const connectDB = async () => {
       process.env.MONGODB_URI || "mongodb://mongo:27017/ts-stack";
 
     await mongoose.connect(mongoURI);
-    console.log("MongoDB bağlantısı başarılı");
+    console.log("Connected to MongoDB");
   } catch (error) {
-    console.error("MongoDB bağlantı hatası:", error);
+    console.error("MongoDB connection error:", error);
     process.exit(1);
   }
 };
