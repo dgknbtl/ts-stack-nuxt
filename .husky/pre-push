@@ -1,10 +1,9 @@
-npm run lint-staged
-
 #!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
 branch_name=$(git rev-parse --abbrev-ref HEAD)
 
 if [ "$branch_name" = "master" ]; then
   echo "🚫 Direct commits to the master branch are not allowed!"
   exit 1
 fi
-
