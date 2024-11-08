@@ -1,19 +1,20 @@
 {
   "compilerOptions": {
-    
     "target": "es2020",
     "module": "commonjs",
     "lib": ["es2017", "esnext.asynciterable"],
     "types": ["node"],
-    // "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    // "resolveJsonModule": true,
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": ".",
+    "strict": true,                    
+    "resolveJsonModule": true,        
+    "incremental": true,              
+    "noEmit": false                   
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "./eslint.config.mjs"],
   "exclude": ["node_modules"]
 }

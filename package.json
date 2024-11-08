@@ -1,9 +1,12 @@
 {
   "scripts": {
     "prepare": "husky",
-    "lint-staged-server": "cd server && npm run lint-staged"
+    "lint-staged-client": "cd client && npm run lint-staged",
+    "lint-staged-server": "cd server && npm run lint-staged",
+    "lint-staged": "npm run lint-staged-server && npm run lint-staged-client"
   },
   "devDependencies": {
-    "husky": "^9.1.6"
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3"
   }
 }

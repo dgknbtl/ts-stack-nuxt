@@ -1,19 +1,19 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import prettierConfig from "eslint-config-prettier";
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import prettierConfig from 'eslint-config-prettier'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    files: ["**/*.{js,mjs,cjs,ts}"],
+    files: ['**/*.{js,mjs,cjs,ts}'],
     languageOptions: {
       globals: globals.browser,
-      parser: "@typescript-eslint/parser",
+      parser: '@typescript-eslint/parser',
       parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        project: "./tsconfig.json",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: ['./tsconfig.json', './lint-staged.config.js'],
       },
     },
   },
@@ -22,7 +22,7 @@ export default [
   prettierConfig,
   {
     rules: {
-      "no-console": "off",
+      'no-console': 'off',
     },
   },
-];
+]
