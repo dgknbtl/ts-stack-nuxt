@@ -10,6 +10,15 @@ export class UserController {
       res.status(400).json({ error: 'Failed to create user', message: error })
     }
   }
+
+  async getUsers(req: Request, res: Response) {
+    try {
+      const users = await userService.getUsers()
+      res.status(200).json(users)
+    } catch (error) {
+      res.status(400).json({ error: 'Failed to get users', message: error })
+    }
+  }
 }
 
 export default new UserController()
