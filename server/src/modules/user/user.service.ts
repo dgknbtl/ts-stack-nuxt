@@ -5,6 +5,10 @@ export class UserService {
     const user = new User(userData)
     return await user.save()
   }
+
+  async getUsers(): Promise<IUser[]> {
+    return await User.find().select('-password')
+  }
 }
 
 export default new UserService()
