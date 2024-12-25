@@ -1,9 +1,9 @@
-# ts-stack-next
-A comprehensive Docker-based development environment for modern web applications using TypeScript on both client and server sides, with Node.js, Express, MongoDB, and Next.js. This repository serves as a kick-start template for new full-stack projects.
+# ts-stack-nuxt
+A comprehensive Docker-based development environment for modern web applications using TypeScript on both client and server sides, with Node.js, Express, MongoDB, and Nuxt. This repository serves as a kick-start template for new full-stack projects.
 
 ## Tech Stack
 ### Client
-- Next.js
+- Nuxt
 - ESLint
 - Husky
 - Lint-staged
@@ -31,8 +31,8 @@ A comprehensive Docker-based development environment for modern web applications
 1. **Clone the repository**: 
 
     ```bash
-    git clone https://github.com/dgknbtl/ts-stack-next.git
-    cd ts-stack-next
+    git clone https://github.com/dgknbtl/ts-stack-nuxt.git
+    cd ts-stack-nuxt
     ```
 
 2. **Install dependencies**:
@@ -89,7 +89,7 @@ A comprehensive Docker-based development environment for modern web applications
 
 ## Project Structure
 
-- **client/**: Contains the frontend code using Next.js and React.
+- **client/**: Contains the frontend code using Nuxt and React.
 - **server/**: Contains the backend code using Node.js and Express.
 - **docker-compose.yml**: Configuration for Docker services in development.
 - **docker-compose.prod.yml**: Configuration for Docker services in production.

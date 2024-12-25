@@ -13,9 +13,10 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
+# nuxt.js
+/.nuxt
+/.output
+/dist
 
 # production
 /build
@@ -32,9 +33,10 @@ yarn-error.log*
 # env files (can opt-in for commiting if needed)
 .env*
 
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+.nuxt-types
+
+# logs
+/logs
+*.log
