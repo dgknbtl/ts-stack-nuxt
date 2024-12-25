@@ -8,6 +8,8 @@ A comprehensive Docker-based development environment for modern web applications
 - Husky
 - Lint-staged
 - Docker
+- Jest
+
 
 ### Server
 - Node.js
@@ -19,8 +21,8 @@ A comprehensive Docker-based development environment for modern web applications
 - Lint-staged
 - ESLint
 - Prettier
-- Jest
 - Docker
+- Jest
 
 ## Installation
 
