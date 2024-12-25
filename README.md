@@ -41,13 +41,19 @@ A comprehensive Docker-based development environment for modern web applications
     npm install
     ```
 
-3. **Start the development environment**:
+3. **Build the project**:
+
+    ```bash
+    make build
+    ```
+
+4. **Start the development environment**:
 
     ```bash
     make up
     ```
 
-4. **For production, use**:
+5. **For production, use**:
 
     ```bash
     make up-prod
@@ -59,12 +65,12 @@ A comprehensive Docker-based development environment for modern web applications
 
 - **Start development environment**: 
   ```bash
-  docker-compose up
+  docker-compose up --build
   ```
 
 - **Start development environment in detached mode**: 
   ```bash
-  docker-compose up -d
+  docker-compose up -d --build
   ```
 
 - **Stop development environment**: 
@@ -74,7 +80,7 @@ A comprehensive Docker-based development environment for modern web applications
 
 - **Start production environment**: 
   ```bash
-  docker-compose -f docker-compose.prod.yml up
+  docker-compose -f docker-compose.prod.yml up --build
   ```
 
 - **Stop production environment**: 
@@ -87,9 +93,33 @@ A comprehensive Docker-based development environment for modern web applications
   docker-compose logs -f
   ```
 
+## Running the Client and Server
+
+### Client
+
+To run the client application, go to the `client` directory and run:
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+This will start the Nuxt development server for the client application.
+
+### Server
+
+To run the server application, go to the `server` directory and run:
+```bash
+cd server
+npm install
+npm run dev
+```
+
+
 ## Project Structure
 
-- **client/**: Contains the frontend code using Nuxt and React.
+- **client/**: Contains the frontend code using Nuxt.
 - **server/**: Contains the backend code using Node.js and Express.
 - **docker-compose.yml**: Configuration for Docker services in development.
 - **docker-compose.prod.yml**: Configuration for Docker services in production.
