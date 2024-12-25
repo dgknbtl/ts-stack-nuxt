@@ -2,7 +2,14 @@
 A comprehensive Docker-based development environment for modern web applications using TypeScript on both client and server sides, with Node.js, Express, MongoDB, and Next.js. This repository serves as a kick-start template for new full-stack projects.
 
 ## Tech Stack
-### Backend
+### Client
+- Next.js
+- ESLint
+- Husky
+- Lint-staged
+- Docker
+
+### Server
 - Node.js
 - TypeScript
 - Express
@@ -12,13 +19,7 @@ A comprehensive Docker-based development environment for modern web applications
 - Lint-staged
 - ESLint
 - Prettier
-- Docker
-
-### Frontend
-- Next.js
-- ESLint
-- Husky
-- Lint-staged
+- Jest
 - Docker
 
 ## Installation
