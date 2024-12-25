@@ -1,4 +1,14 @@
 {
+  "name": "ts-stack-next",
+  "version": "1.0.0",
+  "description": "This repository serves as a kick-start template for full-stack web projects.",
+  "author": "Dogukan Batal <hi@dogu.dev>",
+  "license": "MIT",
+  "homepage": "https://github.com/dgknbtl/ts-stack-next#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgknbtl/ts-stack-next.git"
+  },
   "scripts": {
     "prepare": "husky",
     "lint-staged-client": "cd client && npm run lint-staged",

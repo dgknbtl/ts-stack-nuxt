@@ -3,7 +3,7 @@
     "target": "es2020",
     "module": "commonjs",
     "lib": ["es2017", "esnext.asynciterable"],
-    "types": ["node"],
+    "types": ["node", "jest"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
