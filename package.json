@@ -1,13 +1,13 @@
 {
-  "name": "ts-stack-next",
+  "name": "ts-stack-nuxt",
   "version": "1.0.0",
   "description": "This repository serves as a kick-start template for full-stack web projects.",
   "author": "Dogukan Batal <hi@dogu.dev>",
   "license": "MIT",
-  "homepage": "https://github.com/dgknbtl/ts-stack-next#readme",
+  "homepage": "https://github.com/dgknbtl/ts-stack-nuxt#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dgknbtl/ts-stack-next.git"
+    "url": "https://github.com/dgknbtl/ts-stack-nuxt.git"
   },
   "scripts": {
     "prepare": "husky",
