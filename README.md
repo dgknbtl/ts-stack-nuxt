@@ -23,6 +23,7 @@ A comprehensive Docker-based development environment for modern web applications
 - Prettier
 - Docker
 - Jest
+- Bcrypt
 
 ## Installation
 
